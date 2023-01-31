@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { IoIosArrowDroprightCircle } from "react-icons/io"
-import { addCar, changeCost, changeName } from "../store"
+import { addCar, changeCost, changeName, clearForm } from "../store"
+import { nanoid } from "@reduxjs/toolkit"
 
 
 export default function CarForm() {
@@ -9,7 +10,7 @@ export default function CarForm() {
   const { name, cost } = useSelector((state) => {
     return {
       name: state.form.name,
-      cost: state.form.cost
+      cost: state.form.cost,
     }
   })
 
@@ -25,8 +26,10 @@ export default function CarForm() {
     const car = {
       name,
       cost,
+      id: nanoid()
     }
     dispatch(addCar(car))
+    dispatch(clearForm())
   }
 
 

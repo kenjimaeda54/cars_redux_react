@@ -5,7 +5,7 @@ const carsSlicer = createSlice({
   name: "cars",
   initialState: {
     searchTerm: "",
-    cars: []
+    carsList: []
   },
   reducers: {
     onSearchTerm(state, action) {
@@ -13,16 +13,13 @@ const carsSlicer = createSlice({
     },
     addCar(state, action) {
       // payload =  {name,cost,id}
-      state.cars.push({
-        name: action.payload,
-        cost: action.payload,
-        id: nanoid()
-      })
+      state.carsList.push(action.payload)
+
 
     },
     removeCar(state, action) {
       //payload =  id
-      state.cars = state.cars.filter(it => it.id !== action.payload)
+      state.carsList = state.carsList.filter(it => it.id !== action.payload)
     }
   }
 
