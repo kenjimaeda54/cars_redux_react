@@ -1,17 +1,17 @@
 # List Cars
-Pequena aplicacao para criarmos nossas listas de carros,podemos consultar nossas listas,acompanhar o valor total e deletar itens da lista
+Pequena aplicação para inserirmos nossos   carros, podemos consultar, acompanhar o valor somado dos carros inseridos e deletar itens da lista
 
-## Motivacao
-Praticar mais o uso do react redux e redux toolkit
+## Motivação
+Praticar mais o uso do React Redux e Redux toolkit
 
 
 ## Feature
-- Toda vez que precisamos atualizar nossos dados apenas para representar na UI nao criamos modificacoes nosso modelo de dados
-- Essa atualizacao nao pode inferir nosso modelo atual, como exemplo abaixo que preicsava atualizaer o valor do custo
-- Reforcei o conceito do redux, quando desejamos soma e execlente funcao a ser usada
-- Repara que a logica esta dentro do useSelector
-- Abaixa tem alguns hacker por exemplo ao invez de usar um if para desembrulhar um valor possivelmente undefined usei a letra e comercial
-- E o bold trabalha na logica inversa na primeria vez que a pessoa inserir nao ficara bold pois e o valor corrente,mas na segunda vez se for inserido mesmo nome ele ficara bold em algum texto abaixo anteior
+- Toda vez que precisamos atualizar nossos dados com inteção de  apenas para representar na UI não podemos modificar nosso modelo de dados
+- Essa atualização não pode inferir no modelo atual, como exemplo abaixo que precisava atualizar o valor do custo
+- Reforcei o conceito do reduce, quando desejamos somar algo e excelente função a ser usada
+- Repara que a lógica está dentro do useSelector
+- Abaixo tem alguns hacker, por exemplo, ao invés de usar um if para desembrulhar  valor possivelmente undefined usei a letra e comercial
+- Para aplicar bold trabalhei na lógica inversa, na primeira vez que a pessoa inserir não ficara bold, pois e o valor corrente, mas na segunda vez se for inserido mesmo nome ele ficara bold em algum texto abaixo que  foi inserido
 
 ```javascript
  import { useSelector } from "react-redux"
